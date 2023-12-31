@@ -27,11 +27,11 @@ const Footer = () => {
                 <h4>Page links</h4>
               </div>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/About">About</a></li>
                 <li><a href="#">Testimonial</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/About">Contact</a></li>
               </ul>
             </div>
 
@@ -40,10 +40,10 @@ const Footer = () => {
                 <h4>More Info</h4>
               </div>
               <ul>
-                <li><a href="#">Breeding</a></li>
-                <li><a href="#">Adoption</a></li>
-                <li><a href="#">Pet spa Grooming  </a></li>
-                <li><a href="#">Pet Doctor</a></li>
+                <li><a href="/ComingSoon">Breeding</a></li>
+                <li><a href="/ComingSoon">Adoption</a></li>
+                <li><a href="/ComingSoon">Pet spa Grooming  </a></li>
+                <li><a href="/ComingSoon">Pet Doctor</a></li>
               </ul>
             </div>
             <div className="col-md-6 col-lg-4 open-hours">

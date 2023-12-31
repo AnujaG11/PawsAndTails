@@ -15,26 +15,32 @@ import Footer from './components/Footer';
 import About from './Pages/About';
 import PlacedOrder from './Pages/PlacedOrder';
 import PaymentDetail from './Pages/PaymentDetail';
+import {useState} from "react";
 
 const App = () => {
+  const[category, setCategory]=useState();
+
+  const onClickHandler=(event)=>{
+    console.log(event.target);
+    setCategory(event.target.id);
+  }
+
   return (
     <div>
-      <AppNavbar/>
-    <Router>
+       <Router>
+      <AppNavbar onClickHandler={onClickHandler}/>
+   
     <Routes>
     <Route path="/" element={<Home />} />
-    {/* <Route path="/ComingSoon" element={<ComingSoon/>} /> */}
-    {/* <Route path="/Home" element={<Home />} /> */}
     <Route path="/Cart" element={<Cart />} />
     <Route path="/PlacedOrder" element={<PlacedOrder />} />
-      <Route path="/Cart/PaymentDetail/PlacedOrder" element={<PlacedOrder />} />
       <Route path="/UserProfile" element={<UserProfile/>} />
-      <Route path="/Product1" element={<ProductPage />} />
+      <Route path="/Product1" element={<ProductPage category={category}/>} />
       <Route path="/Login" element={<Login/>} />
       <Route path="/Register" element={<Register/>} />
       <Route path="/ComingSoon" element={<ComingSoon/>} />
       <Route path="/About" element={<About/>} />
-      <Route path="/Cart/PaymentDetail" element={<PaymentDetail/>} />
+      <Route path="/PaymentDetail" element={<PaymentDetail/>} />
 
       
   

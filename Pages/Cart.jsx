@@ -235,7 +235,7 @@ const Cart = () => {
                 {/* <Button type='success' style={{ backgroundColor: '#74992e', color: 'black' }} onClick={handleUpdateShippingAddress}>
                   Update Address
                 </Button> */}
-                <Button variant='success' style={{  color: 'black' }} onClick={handleProceedToCheckout} href="./PaymentDetail">
+                <Button variant='success' style={{  color: 'black' }} onClick={handleProceedToCheckout} href="/PaymentDetail">
                   Proceed to Pay
                 </Button>
                 <Button variant='warning' style={{ color: 'black' }} onClick={handleUpdateCart} href="./Product1">

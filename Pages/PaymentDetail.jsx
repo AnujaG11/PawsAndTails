@@ -147,7 +147,7 @@ function Upi(props) {
                         <input type="text" class="form-control" placeholder='Enter Your UPI ID'></input>
                     </div>
                     <br></br>
-                <button type="submit" class="btn btn-primary" >  <a  href="/Cart/PaymentDetail/PlacedOrder" > Pay </a> </button>
+                <button type="submit" class="btn btn-primary" >  <a  href="/PlacedOrder" > Pay </a> </button>
             </form>
         </>)
 
@@ -179,7 +179,7 @@ function NetBanking(props) {
                 <br></br> 
                     <br></br> 
 
-                <button type="submit" class="btn btn-primary" > <a  href="/Cart/PaymentDetail/PlacedOrder" > Pay </a></button>
+                <button type="submit" class="btn btn-primary" > <a  href="/PlacedOrder" > Pay </a></button>
             </form>
         </>)
 
@@ -213,7 +213,7 @@ function Card(props) {
             <p>EXPERITION DATE</p>
             <input class="form-control"></input>
             <br/>
-            <button type="submit" class="btn btn-primary" > <a  href="/Cart/PaymentDetail/PlacedOrder" >Pay  </a> </button>
+            <button type="submit" class="btn btn-primary" > <a  href="/PlacedOrder" >Pay  </a> </button>
             </form>
         </>)
 
